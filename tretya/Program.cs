@@ -10,9 +10,10 @@
 
 Console.Clear();
 Console.Write("Введите координаты первой точки X1 и Y1: ");
-int X1 = int.Parse(Console.ReadLine());
-int Y1 = int.Parse(Console.ReadLine());
+int X1 = int.Parse(Console.ReadLine() );
+int Y1 = int.Parse(Console.ReadLine() );
 Console.Write("Введите координаты второй точки X2 и Y2: ");
-int X2 = int.Parse(Console.ReadLine());
-int Y2 = int.Parse(Console.ReadLine());
-double s = Math.Sqrt(n...);
+int X2 = int.Parse(Console.ReadLine() );
+int Y2 = int.Parse(Console.ReadLine() );
+double s = Math.Sqrt((X1-X2)^2 + (Y1-Y2)^2);
+Console.WriteLine($"расстояние равно: {s}");
