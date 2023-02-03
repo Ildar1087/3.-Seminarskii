@@ -3,23 +3,25 @@
 
 Console.Clear();
 Console.Write("Введите номер четверти: ");
-int X = int.Parse(Console.ReadLine());
-int Y = int.Parse(Console.ReadLine());
-if(X>0&&Y>0)
+int n = int.Parse(Console.ReadLine());
+int X, Y;
+if(n == 1)
 {
-    Console.WriteLine("{X} и {Y} больше нуля ");
+    Console.WriteLine("X>0 и Y>0");
 }
-if(X<0&&Y>0)
+if(n == 2)
 {
-    Console.WriteLine("2");
+    Console.WriteLine("X<0 и Y>0");
 }
-if(X<0&&Y<0)
+if(n == 3)
 {
-    Console.WriteLine("3");
+    Console.WriteLine("X<0 и Y<0");
 }
-if(X>0&&Y<0)
+if(n == 4)
 {
-    Console.WriteLine("4");
+    Console.WriteLine("X>0 и Y<0");
 }
-if (X == 0 || Y == 0)
-    Console.WriteLine("На оси");
+if (n <= 0 || n > 4)
+{
+ Console.WriteLine("введена не правильная четверть");
+}
