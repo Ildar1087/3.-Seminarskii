@@ -9,11 +9,15 @@
 //double s = Math.Sqrt(...);
 
 Console.Clear();
-Console.Write("Введите координаты первой точки X1 и Y1: ");
-int X1 = int.Parse(Console.ReadLine() );
-int Y1 = int.Parse(Console.ReadLine() );
-Console.Write("Введите координаты второй точки X2 и Y2: ");
-int X2 = int.Parse(Console.ReadLine() );
-int Y2 = int.Parse(Console.ReadLine() );
-double s = Math.Sqrt((X1-X2)^2 + (Y1-Y2)^2);
-Console.WriteLine($"расстояние равно: {s}");
+Console.Write("Введите X1: ");
+double x1 = int.Parse(Console.ReadLine());
+Console.Write("Введите Y1: ");
+double y1 = int.Parse(Console.ReadLine());
+Console.Write("Введите X2: ");
+double x2 = int.Parse(Console.ReadLine());
+Console.Write("Введите Y2: ");
+double y2 = int.Parse(Console.ReadLine());
+
+double d = Math.Sqrt(Math.Pow(x1 - x2), 2) + (Math.Pow(y1 - y2), 2);
+
+Console.WriteLine($"d = {d:f3}");
