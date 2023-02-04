@@ -4,11 +4,14 @@
 // 2 -> 1, 4 
 Console.Clear();
 Console.Write("Введите Ваше число: ");
-int n = int.Parse(Console.ReadLine());
-int z = 1;
-while (z <= n)
-{ 
-  int kv = (z * z);
-  z = z + 1; 
-  Console.Write($"{kv}  ");
-} 
+int N = int.Parse(Console.ReadLine());
+int i = 1;
+if (N < 0)
+{
+  i = N;
+  N = -1; // n = n * (-1);
+}
+for (; i <= N; i++)
+{
+  Console.Write($"{Math.Pow(i, 2)} ");
+}
