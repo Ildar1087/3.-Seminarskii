@@ -1,10 +1,17 @@
 ﻿// напишите программу, которая принимает на вход число (N) и 
 // выдает таблицу квадратов чисел от 1 до N 
-// 5 -> 25
-// 2 -> 4, 
+// 5 -> 1, 4, 9, 16, 25
+// 2 -> 1, 4 
 Console.Clear();
-Console.Write("Введите X: ");
-int X = int.Parse(Console.ReadLine());
-
-Console.Write("Введите Y: ");
-int Y = int.Parse(Console.ReadLine());
+Console.Write("Введите Ваше число: ");
+int n = int.Parse(Console.ReadLine());
+int z = 1;
+while (z <= n)
+{ 
+  int kv = (z * z);
+  z = z + 1; 
+  Console.Write($"{kv} ");
+} 
+// else {
+//   Console.Write()
+// }
