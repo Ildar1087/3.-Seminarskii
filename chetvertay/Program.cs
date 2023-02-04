@@ -10,8 +10,5 @@ while (z <= n)
 { 
   int kv = (z * z);
   z = z + 1; 
-  Console.Write($"{kv} ");
+  Console.Write($"{kv}  ");
 } 
-// else {
-//   Console.Write()
-// }
